@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    background-color: #121212;;
+    width: 0.5rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(207, 34, 34);
+}
+
+.container{
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header{
+    height: 10vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    font-size: 40px;
+    width: 10%;
+    height: 8vh;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: rgb(207, 34, 34);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header .link-cont{
+    flex-direction: row;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    z-index: 3;
+}
+.header .link-cont a{
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(207, 34, 34);
+    margin-left: 3%;
+    cursor: pointer;
+    margin-right: 3%;
+    transition: all 1s;
+    text-underline-offset: 1px;
+}
+
+.header .link-cont a:hover{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 3vh;
+}
+.back{
+    position: absolute;
+    width: 20%;
+    height: 8vh;
+    background-color: #242424;
+    filter: blur(2px);
+    z-index: -1;
+    border-radius: 10px;
+}
+.header .link-cont img{
+    display: none;
+}
+
+/* header */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* land sec */
+
+.sec1-land{
+    height: 100vh;
+    display: flex;
+    margin-top: 10vh;
+    width: 100%;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    z-index: -0.1;
+}
+.land-right{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.land-left{
+    width: 50%;
+    text-transform: uppercase;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50%;
+    color: rgb(207, 34, 34);
+}
+h1 {
+    width: fit-content;
+    padding: 15px;
+    background-color: #121212;
+}
+.land-right img{
+    width: 300px;
+    position: relative;
+    top: -5vh;
+    border-radius: 10px;
+    background-color: #121212;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* favoutites */
+
+
+.sec2-musics{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: 15vh;
+}
+.arrow1,
+.arrow2 {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 40px;
+    background-color: rgb(207, 34, 34);
+    color: #121212;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+.arrow2{
+    right: 20%;
+}
+.arrow1{
+    right: -20%;
+}
+.song-cont{
+    display: flex;
+    padding: 10px;
+    height: 30vh;
+    overflow-x: scroll;
+    width: 25%;
+    position: relative;
+    background-color: #121212;
+}
+.song-cont::-webkit-scrollbar{
+    visibility: hidden;
+
+}
+.song-cont::-webkit-scrollbar-thumb{
+    visibility: hidden;
+
+}
+.song-cont::-webkit-scrollbar-button{
+    visibility: hidden;
+}
+.song-cont::-webkit-scrollbar-corner{
+    visibility: hidden;
+}
+.song-cont div{
+    width: 80%;
+    position: absolute;    
+    height: 25vh;
+
+}
+#first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10%;
+
+}
+
+#second{
+    left: 103%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#third{
+left: 200%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 680px){
+    .container{
+        height: 195vh;
+    }
+    .header .link-cont{
+        width: 20%;
+        height: 8vh;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .active{
+    width: 30%;
+    height: 20vh;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    }
+    .active3{
+        margin-top: 20%; 
+        display: inherit !important; 
+    }
+    .header .link-cont a{
+        display: none;
+        text-underline-offset: 1px;
+    }
+
+    .header .link-cont a:hover{
+        text-underline-offset: 5px;
+    }
+    .back{
+        width: 20%;
+        height: 8vh;
+    }
+    .active4{
+        width: 30%;
+        height: 20vh;
+        padding: 20px;
+        z-index:-1;
+
+    }
+    .header .link-cont img{
+        display: inherit;
+        cursor: pointer;
+    }
+    .active2{
+        margin-right: 5%; 
+        align-self: end;
+        margin-top: 50%; 
+
+    }
+    .header .logo {
+    font-size: 40px;
+    width: 20%;
+    margin-left: 3%;
+}
+
+
+
+/* sec land */
+
+
+
+
+
+
+
+
+.sec1-land{
+    height: 150vh;
+    display: flex;
+    margin-top: 10vh;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.land-right{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 30vh;
+
+}
+.land-left{
+    position: absolute;
+    bottom: 40vh;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: flex-start;
+}
+.land-right img{
+    width: 60%;
+    border-radius: 10px;
+}
+
+
+
+
+/* fav */
+
+.song-cont{
+
+    width: 80%;
+}
+.arrow1,
+.arrow2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 30px;
+}
+.arrow2{
+    right: 3%;
+}
+.arrow1{
+    right: 0;
+}
+}
+
+
+/* svg */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-shape-divider-bottom-1675677215 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1675677215 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 55px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1675677215 .shape-fill {
+    fill: rgb(207, 34, 34);
+}
+svg{
+    transition: 1s;
+    position: fixed;
+
+}
+#two{
+    transition: 0.5s;
+    z-index: -12;
+
+
+}
+#one{
+    transition: 0.5s;
+    z-index: -12;
+
+}
+circle{
+    transition: 4s;
+}
